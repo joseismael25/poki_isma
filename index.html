@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Pokémon - PokeAPI</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <main class="contenedor">
+        <header class="encabezado">
+            <h1>Buscador de Pokémon</h1>
+            <p>Consulta información de un Pokémon usando PokeAPI.</p>
+        </header>
+
+        <form id="formularioPokemon" class="buscador">
+            <input
+                type="text"
+                id="pokemonInput"
+                placeholder="Ingresa el nombre o número de un Pokémon"
+                autocomplete="off"
+            >
+            <button type="submit" id="btnBuscar">Buscar Pokémon</button>
+        </form>
+
+        <div id="mensaje" class="mensaje" aria-live="polite"></div>
+
+        <section>
+            <div id="resultado" class="resultado" aria-live="polite"></div>
+            <nav id="paginacion" class="paginacion" aria-label="Paginación"></nav>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
